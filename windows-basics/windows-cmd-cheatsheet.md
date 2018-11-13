@@ -187,3 +187,14 @@ you can run this command remotely in invoke-command cmdlet.
 ```
 msiexec /i software.msi /norestart
 ```
+#### Install exe as a service 
+```
+Use below Command
+$ sc.exe -Name <Service Name> binPath= "<executable path>"
+
+Sometimes there are timeout error while you are starting service from services console, you can use below document to resolve it. It is badsically a registry entry "ServicesPipeTimeout" as 
+DWORD value (86400000).
+
+URL: https://support.symantec.com/en_US/article.TECH193916.html
+```
+
